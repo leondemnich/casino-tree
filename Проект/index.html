@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Smart Winner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- <div class="burger">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="menu_link_mobile">Home</a>
+            <a href="#" class="menu_link_mobile">PLAY ALL lottery</a>
+            <a href="#" class="menu_link_mobile">LOTTERY GROUPS</a>
+            <a href="#" class="menu_link_mobile">Promotions</a>
+            <a href="#" class="account_link_mobile">My Account</a>
+          </div>
+          <div id="main">
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                  <a href="#" class="burger_link">
+                      <img src="./img/menu.svg" alt="" class="burger_menu">
+                  </a>
+              </span>
+          </div>                  
+    </div> -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav">
+                 <div class="burger">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#" class="menu_link_mobile">Home</a>
+                        <a href="#" class="menu_link_mobile">PLAY ALL lottery</a>
+                        <a href="#" class="menu_link_mobile">LOTTERY GROUPS</a>
+                        <a href="#" class="menu_link_mobile">Promotions</a>
+                        <a href="#" class="account_link_mobile">My Account</a>
+                      </div>
+                      <div id="main">
+                          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                              <a href="#" class="burger_link">
+                                  <img src="./img/menu.svg" alt="" class="burger_menu">
+                              </a>
+                          </span>
+                      </div>                  
+                </div> 
+                <div class="logo">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.svg" alt="" class="logo_image">
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="#">
+                        <img src="./img/avatar.png" alt="">
+                    </a>                    
+                </div>
+                <div class="contact">
+                    <div class="logout">
+                        <p class="logout_text">
+                            Welcome <strong>Roma</strong> — <a href="#" class="logout_link">Logout</a> 
+                        </p>
+                        <p class="logout_text">
+                            Your balance:  <strong>Р 0,00</strong>
+                        </p>
+                    </div>
+                    <div class="lang">
+                        <ul class="social">
+                            <li class="social_icons">
+                                <a href="#" class=""> <img src="./img/facebook.svg" alt="" class=""> </a>
+                            </li>
+                            <li class="social_icons">
+                                <a href="#" class=""> <img src="./img/twitter.svg" alt="" class=""> </a>
+                            </li>
+                            <li class="social_icons">
+                                <a href="#" class=""> <img src="./img/facebook-messenger.svg" alt="" class=""> </a>
+                            </li>
+                            <li class="social_icons">
+                                <a href="#" class=""> <img src="./img/whatsapp.svg" alt="" class=""> </a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()">
+                                <img class="dropdown_click" src="./img/usa.svg" alt="">
+                                <p class="dropdown_text dropdown_click">English</p>
+                                <img class="dropdown_click" src="./img/expand-more.svg" alt="">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">
+                                    <img src="./img/usa.svg" alt="">
+                                    Українська
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_text">
+                <div class="logout">
+                    <p class="logout_text">
+                        Welcome <strong>Roma</strong> — <a href="#" class="logout_link">Logout</a> 
+                    </p>
+                    <p class="logout_text">
+                        Your balance:  <strong>Р 0,00</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu_list">
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">Home</a>
+                    </li>
+                    <p class="menu_content"></p>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">PLAY ALL lottery</a>
+                    </li>
+                    <p class="menu_content"></p>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">LOTTERY GROUPS</a>
+                    </li>
+                    <p class="menu_content"></p>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">Promotions</a>
+                    </li>
+                    <p class="menu_content"></p>
+                </ul>
+                <ul class="account_list">
+                    <li class="account_item">
+                        <a href="#" class="account_link">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="fon">
+                <img src="./img/header.png" alt="" class="fon_img">
+            </div>
+            <div class="card">
+                <div class="card_column">
+                    <img src="./img/section1.svg" alt="" class="card_image">
+                    <div class="card_desc">
+                        <div class="card_subtitle">
+                            <h3 class="card_title">
+                                you pick
+                            </h3>
+                            <a href="#" class="card_link">
+                                Play Now» 
+                            </a>
+                        </div>
+                        <p class="card_text">
+                            It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_column">
+                    <img src="./img/icon2section1.svg" alt="" class="card_image">
+                    <div class="card_desc">
+                        <div class="card_subtitle">
+                            <h3 class="card_title">
+                                we buy
+                            </h3>
+                            <a href="#" class="card_link">
+                                More Details» 
+                            </a>
+                        </div>
+                        <p class="card_text">
+                            Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.                        </p>
+                    </div>
+                </div>     
+                <div class="card_column">
+                    <img src="./img/icon3section1.svg" alt="" class="card_image">
+                    <div class="card_desc">
+                        <div class="card_subtitle">
+                            <h3 class="card_title">
+                                you win!!!
+                            </h3>
+                            <a href="#" class="card_link">
+                                Withdraw My Winnings» 
+                            </a>
+                        </div>
+                        <p class="card_text">
+                            When you win, we’ll automatically credit your account the full value of your winnings.                        </p>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </header>
+    <section class="upcoming">
+        <div class="container">
+            <h1 class="upcoming_title">
+                BIGGEST UPCOMING LOTTERY DRAWS
+            </h1>
+            <div class="upcoming_card">
+                <div class="upcoming_column cards">
+                    <div class="upcoming_top">
+                        <img src="./img/icon1section2.png" alt="" class="upcoming_image">
+                        <div class="upcoming_min"> 
+                            <h3 class="upcoming_subtitle">
+                                <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                                Mega Millions
+                            </h3>
+                            <p class="upcoming_text">$94 000 000</p>
+                        </div>
+                    </div>
+                    <div class="upcoming_bottom">
+                        <a href="#" class="upcoming_btn btn">Play Now</a>
+                        <div class="upcoming_timerblock">
+                            <img src="./img/timer_white.svg" alt="" class="timer_imeg">
+                            <p class="upcoming_timer">                            
+                                1:22:01
+                            </p>
+                        </div>     
+                    </div>
+                </div>
+                <div class="upcoming_column cards">
+                    <div class="upcoming_top">
+                        <img src="./img/icon1section2.png" alt="" class="upcoming_image">
+                        <div class="upcoming_min"> 
+                            <h3 class="upcoming_subtitle">
+                                <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                                Mega Millions
+                            </h3>
+                            <p class="upcoming_text">$94 000 000</p>
+                        </div>
+                    </div>
+                    <div class="upcoming_bottom">
+                        <a href="#" class="upcoming_btn btn">Play Now</a>
+                        <div class="upcoming_timerblock">
+                            <img src="./img/timer_white.svg" alt="" class="timer_imeg">
+                            <p class="upcoming_timer">                            
+                                1:22:01
+                            </p>
+                        </div>     
+                    </div>
+                </div>
+                <div class="upcoming_column cards">
+                    <div class="upcoming_top">
+                        <img src="./img/icon1section2.png" alt="" class="upcoming_image">
+                        <div class="upcoming_min"> 
+                            <h3 class="upcoming_subtitle">
+                                <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                                Mega Millions
+                            </h3>
+                            <p class="upcoming_text">$94 000 000</p>
+                        </div>
+                    </div>
+                    <div class="upcoming_bottom">
+                        <a href="#" class="upcoming_btn btn">Play Now</a>
+                        <div class="upcoming_timerblock">
+                            <img src="./img/timer_white.svg" alt="" class="timer_imeg">
+                            <p class="upcoming_timer">                            
+                                1:22:01
+                            </p>
+                        </div>                     
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </section>
+    <section class="online">
+        <div class="container">
+            <h2 class="online_title">
+                PLAY UPCOMING LOTTERIES ONLINE
+            </h2>
+            <div class="online_card">
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+                <div class="online_column cards">
+                    <a href="#">
+                        <img src="./img/Icon.png" alt="star" class="online_star">
+                    </a>
+                    
+                    <img src="./img/logosection3.png" alt="star" class="online_image">
+                    <h3 class="upcoming_subtitle">
+                        <img src="./img/usa.svg" alt="" class="upcoming_flag">
+                        Mega Millions
+                    </h3>
+                    <p class="online_text">$122 000 000</p>
+                    <span class="online_timer">
+                        <img src="./img/timer.svg" alt="" class="timer_imeg">
+                        1:22:01
+                    </span>
+                    <a href="#" class="upcoming_btn btn">Play Now</a>
+                </div>
+            </div>
+            <a href="#" class="online_link">More Details »</a>
+            <a href="#" class="online_link_mobile">All lotteries »</a>
+        </div>
+    </section>
+    <section class="biggest">
+        <div class="container">
+            <div class="biggest_blokc">
+                <div class="biggest_card">
+                    <h2 class="biggest_title">
+                        BIGGEST LOTTERY WINNER
+                    </h2>
+                    <div class="biggest_card_content cards">
+                        <div class="biggest_title_card">
+                            <img src="./img/star 1.png" alt="" class="biggest_image">
+                            <p class="biggest_text">Won
+                                <span class="biggest_span">€100 000 000</span>
+                            </p>
+                        </div>
+                        <div class="biggest_main">
+                            <div class="biggest_content">
+                            <img src="./img/Group 285.png" alt="" class="biggest_pic">
+                            <div class="biggest_nomers">
+                                <p class="biggest_text_card">
+                                    UK Lotto results:
+                                </p>
+                                <div class="biggest_subtitle_card">
+                                    <div class="biggest_results">
+                                        <img src="./img/number.png" alt="" class="results_subtitle_img">
+                                        <img src="./img/number.png" alt="" class="results_subtitle_img">
+                                        <img src="./img/number.png" alt="" class="results_subtitle_img">
+                                        <img src="./img/number.png" alt="" class="results_subtitle_img">
+                                        <img src="./img/number.png" alt="" class="results_subtitle_img">
+                                    </div>
+                                    <p class="biggest_subtitle_text">Date: 20.11.2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="biggest_content_right">
+                            <h4 class="biggest_content_title">
+                                Shaun Vincent a Lottery Winner
+                            </h4>
+                            <p class="biggest_content_text">
+                                Shaun Vincent, from Barnsley, celebrates his £1,158,038 National Lottery win after his cheque presentation at the Cedar Court Hotel, Wakefield.
+                            </p>
+                            <a href="#" class="biggest_content_link">
+                                Read the full story
+                            </a>
+                            <a href="#" class="biggest_content_btn">
+                                Play Now
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>                    
+                <div class="biggest_column">
+                    <h2 class="biggest_title">
+                        BIGGEST LOTTERY WINNER
+                    </h2>
+                    <div class="biggest_column_lead cards">
+                        <p class="column_lead">
+                            Total prizes paid out
+                        </p>
+                        <span class="column_span">
+                            US$ 107 233 768
+                        </span>
+                        <p class="column_lead">
+                            <span class="column_numbers">6 975 146</span>
+                            winning tickets
+                        </p>
+                    </div>
+                    <div class="biggest_column_blokc">
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                        <div class="biggest_column_subblokc">
+                            <img src="./img/winner 1.png" alt="" class="biggest_column_img">
+                            <div class="biggest_column_desc">
+                                <p class="biggest_column_data">
+                                    20.11.2021
+                                </p>
+                                <p class="biggest_column_flag">
+                                    <img src="./img/germani-flag.svg" alt="" class="biggest_column_germany">
+                                    J.J won  Р175
+                                </p>
+                                <p class="biggest_column_meta">
+                                    in   7 ИЗ 49   draw  #13476
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="accor">
+        <div class="container">
+            <h2 class="accor_title">FREQUENTLY ASKED QUESTION (F.A.Q.)</h2>
+            <div class="accor_blokc">
+                <button class="accordion">Can I play the lottery online? <img src="./img/expand-more.svg" alt="" class="accor_img"></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">How will I get my wins? <img src="./img/expand-more.svg" alt="" class="accor_img"></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Is it safe to play lottery online? <img src="./img/expand-more.svg" alt="" class="accor_img"></button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>           
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_whatsapp">
+                <img class="footer_whatsapp_img" src="./img/whatsapp-footer.svg" alt="">
+                    <div class="footer_whatsapp_link">
+                        <a href="#" class="whatsapp_link">
+                            Live chat by WhatsApp
+                        </a>
+                        <p class="whatsapp_text">
+                            Customer Service
+                        </p>
+                    </div>
+                </div>
+            <div class="footer_blokc">               
+                <div class="footer_subblokc">                   
+                    <span class="footer_span">
+                        USEFUL LINKS
+                    </span>
+                    <div class="footer_items">
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link footer_link_hidden">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Lottery Results & Winners
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Lottery Promotions
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Contact Us
+                                </a>
+                            </li>                        
+                        </ul>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Security
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Acceptable Use Policy
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">
+                                    Website Use Policy
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link_bold">
+                                    Affiliate program
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="footer_subtext">
+                    <span class="footer_subtext_title">
+                        SMARTWINNERS
+                    </span>
+                    <p class="footer_subtext_text">
+                        The trade name SmartWinners and all content on this website is a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. 
+                    </p>
+                    <p class="footer_subtext_subtext">
+                        Our registered business address is Unit 6158, PO Box 6945, London, W1A 6US, United Kingdom.
+                    </p>
+                </div>
+                <div class="footer_subdark">
+                    <div class="footer_subdark_blokc">
+                        <div class="footer_subdark_socials">
+                            <img src="./img/icon/facebook.png" alt="" class="footer_subdark_icone">
+                            <img src="./img/icon/twitter.png" alt="" class="footer_subdark_icone">
+                            <img src="./img/icon/facebook-messenger.png" alt="" class="footer_subdark_icone">
+                        </div>
+                        <div class="footer_subdark_text">
+                            <div class="footer_subdark_span">
+                                PAYMENT METHODS
+                            </div>
+                            <div class="footer_subdark_carts">
+                                <img src="./img/Visa-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/MasterCard-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/Maestro-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/DinersClub-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/Skrill-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/Bitcoin-dark.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/qiwi 1.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/hsbc 1.png" alt="" class="footer_subdark_cart">
+                                <img src="./img/litecoin 1.png" alt="" class="footer_subdark_cart">
+                            </div>
+                        </div>
+                        <div class="footer_subdark_security">
+                            <p class="footer_security_text">
+                                SECURITY & TRUST
+                            </p>
+                            <div class="footer_security_pic">
+                                <img src="./img/ctv 1.png" alt="" class="footer_security_cvt">
+                                <img src="./img/comodo 1.png" alt="" class="footer_security_img">
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
